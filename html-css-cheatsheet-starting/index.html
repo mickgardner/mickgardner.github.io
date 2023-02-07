@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Michael</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <h1>CSS Position Rules</h1>
+      <p>This cheatsheet highlights how CSS position rules work</p>
+    </header>
+    <main>
+      <h2>The position CSS property</h2>
+      <p>The <span class="italic">position</span> property sets how an HTML element is positioned in a document. Using <span class='italic'>top</span>, <span class='italic'>right</span>, <span class='italic'>bottom</span>, <span class='italic'>left</span> properties along with <span class='italic'>position</span> allows you to determine the final location of positioned elements.
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Description</th>
+            <th>Tips</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="italic">position</span></td>
+            <td><span class="italic">static</span></td>
+            <td>The element is positioned according to the normal flow of the document.</td>
+            <td>
+              <span class="italic">top</span>, <span class="italic">right</span>, <span class="italic">bottom</span>, <span class="italic">left</span> and <span class="italic">z-index</span> have no effect.
+            </td>
+          </tr>
+          <tr>
+            <td><span class="italic">position</span></td>
+            <td><span class="italic">relative</span></td>
+            <td>The element is positioned according to the normal flow of the document <strong>and then offset relative to itself</strong>, based on the values of <span class="italic">top</span>, <span class="italic">right</span>, <span class="italic">bottom</span>, and <span class="italic">left</span>. The offset does not effect the position of any other elements; thus the space given for the element in the page layout is the same position as if it were <span class="italic">static</span>.</td>
+            <td>Uses <span class="italic">top</span>, <span class="italic">right</span>, <span class="italic">bottom</span>, <span class="italic">left</span></td>
+          </tr>
+          <tr>
+            <td><span class="italic">position</span></td>
+            <td><span class="italic">absolute</span></td>
+            <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. <strong>It is positioned relative to its closest positioned ancestor, if any;</strong> otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of <span class="italic">top</span>, <span class="italic">right</span>, <span class="italic">bottom</span>, and <span class="italic">left</span>.
+
+</td>
+<td>This value creates a new stacking context when the value of <span class="italic">z-index</span> is not <span class="italic">auto</span>. The margins of absolutely positioned boxes do not collapse with other margins.</td>
+          </tr>
+          <tr>
+            <td><span class="italic">position</span></td>
+            <td><span class="italic">fixed</span></td>
+            <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), or the will-change property is set to transform, in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) Its final position is determined by the values of <span class="italic">top</span>, <span class="italic">right</span>, <span class="italic">bottom</span>, and <span class="italic">left</span>.</td>
+            <td>This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.</td>
+          </tr>
+          <tr>
+            <td><span class="italic">position</span></td>
+            <td><span class="italic">sticky</span></td>
+            <td>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of <span class="italic">top</span>, <span class="italic">right</span>, <span class="italic">bottom</span>, and <span class="italic">left</span>. The offset does not affect the position of any other elements.</td>
+            <td>This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor.</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>The content of this article was almost entirely copied from MDN. MDN content is under the <a href="https://github.com/mdn/content/blob/main/LICENSE.md">CC-BY-SA-2.5 License</a>. No copyright or ownership of this content is claimed by the publisher of this page.</p>
+    </footer>
+  </body>
+</html>
