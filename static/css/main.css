@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Roboto";
+    src:
+        local("Roboto"),
+        url("../fonts/Roboto/Roboto-Medium.ttf") format("TrueType");
+}
+body {
+    background-color:#FAF9F6;
+    font-family:Roboto;
+    background: url("../img/luca-bravo.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.container {
+    display: flex;
+    justify-content:center;
+    flex-flow: column wrap;
+    align-items:space-evenly;
+}
+header {
+    text-align: center;
+}
+.links {
+    display: flex;
+    justify-content:center;
+    flex-flow: row wrap;
+    height:150px;
+    margin:10px 0px;
+}
+.links a {
+    height: 80px;
+    padding:5px;
+    width:70px;
+    background-color:white;
+    margin:4px;
+    border-radius:15px;
+}
+.links a p {
+    text-align:center;
+    color:black;
+    font: 900 1vmin/5vh, Roboto;
+    filter: invert(1) grayscale(1) contrast(9) drop-shadow(.1em .1em black);
+}
+.icon {
+    width:70px;
+    border-radius:15px;
+}
+.links img {
+    width: 70px;
+}
+footer {
+    text-align: center;
+}
