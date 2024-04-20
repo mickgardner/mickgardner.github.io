@@ -11,6 +11,11 @@ body {
     background-repeat:no-repeat;
     background-size:cover;
 }
+h1 {
+    color:black;
+    font: 900 1vmin/5vh, Roboto;
+    filter: invert(1) grayscale(1) contrast(9) drop-shadow(.1em .1em black);
+}
 .container {
     width:100%;
     display: grid;
@@ -35,14 +40,12 @@ main {
     flex-flow: row wrap;
     height:100%;
     margin:10px 0px;
-    flex-grow:1;
     align-content:space-between;
 }
 
 main a {
     display:flex;
     justify-content:center;
-    align-content:space-between;
     align-items:center;
     flex-flow: column nowrap;
     height: 80px;
@@ -75,5 +78,44 @@ footer {
     color:black;
     font: 900 1vmin/5vh, Roboto;
     filter: invert(1) grayscale(1) contrast(9) drop-shadow(.1em .1em black);
+}
+
+@media screen and (max-width:768px) {
+    main {
+        grid-area:main;
+        display: flex;
+        justify-content:center;
+        flex-flow: row wrap;
+        height:100%;
+        margin:10px 0px;
+        align-content:space-between;
+    }
+    main img {
+        width: 200px;
+    }
+    main a {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-flow: column nowrap;
+        padding:5px;
+        margin:30px;
+        height:220px;
+        width:200px;
+    }
+    main a span {
+        text-align:center;
+        color:black;
+        font: 900 1vmin/5vh, Roboto;
+        filter: invert(1) grayscale(1) contrast(9) drop-shadow(.1em .1em black);
+    }
+    .icon {
+        width:200px;
+        border-radius:15px;
+        background-color:white;
+        border-radius:15px;
+        padding:5px;
+        margin:4px;
+    }
 }
 
