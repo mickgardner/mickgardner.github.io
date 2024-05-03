@@ -80,7 +80,10 @@ footer {
     filter: invert(1) grayscale(1) contrast(9) drop-shadow(.1em .1em black);
 }
 
-@media only screen and (max-width:768px) and (orientation: portrait) {
+@media only screen 
+    and (max-width:1023px) 
+    and (orientation: portrait) 
+    and (-webkit-device-pixel-ratio: 3) {
     main {
         grid-area:main;
         display: flex;
