@@ -1,6 +1,80 @@
-body {
-  font-family:Verdana,Arial, Tahoma, Sans-Serif;
-  background: #f5f4f4;
-  color: dark-gray;
-  font-size: 1em;
+  body {
+    font-family: Inter, Verdana,Arial, Tahoma, Sans-Serif;
+    background: #f5f4f4;
+    color: #1b1b1b;
+    font-size: 1em;
+  }
+
+  header {
+    padding: 20px 0px 20px 10px;
+  }
+
+  aside {
+    padding: 20px 0px 20px 10px;
+  }
+
+  aside nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+  }
+
+  nav li {
+    padding: 5px;
+  }
+
+  main {
+    grid-area: main;
+    padding: 20px 10px 20px 5px;
+  }
+
+@media (min-width: 500px) {
+  body {
+    font-family: Inter, Verdana,Arial, Tahoma, Sans-Serif;
+    background: #f5f4f4;
+    color: #1b1b1b;
+    font-size: 1em;
+    display: grid;
+    grid-template-areas: 
+      "header header header header"
+      "aside main main main"
+      "footer footer footer footer";
+  }
+
+  header {
+    grid-area: header;
+    padding: 20px 0px 20px 10px;
+  }
+
+  aside {
+    grid-area: aside;
+    padding: 20px 0px 20px 10px;
+  }
+
+  aside nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+
+  }
+
+  nav li {
+    padding: 5px;
+  }
+
+  main {
+    grid-area: main;
+    padding: 20px 10px 20px 5px;
+  }
+
+  footer {
+    grid-area: footer;
+    padding: 20px 0px 20px 10px;
+  }
 }
+
+
+
+
